@@ -4,8 +4,6 @@ type: workflow
 identifier: Provision_Java_App
 name: Provision Java App
 owner: user:account/todd.parson@harness.io
-orgIdentifier: sandbox
-projectIdentifier: parson
 spec:
   output:
     links:
@@ -62,7 +60,7 @@ spec:
     name: Provision Java App
     action: trigger:harness-custom-pipeline
     input:
-      url: https://app.harness.io/ng/account/EeRjnXTnS4GrLG5VNNJZUw/all/orgs/sandbox/projects/parson/pipelines/Java_App_Provisioner/pipeline-studio/?storeType=REMOTE&connectorRef=parsonghharnessidpsandbox&repoName=harness-admin-repo&branch=main
+      url: https://app.harness.io/ng/account/4vf8wTpeRBGTpj_YQBK4Xg/all/orgs/default/projects/default_project/pipelines/Java_App_Provisioner/pipeline-studio/?storeType=INLINE
       apikey: ${{ parameters.token }}
       inputset:
         project_name: ${{ parameters.project_name }}
