@@ -41,14 +41,14 @@ metadata:
     
     #Sonar dashboard
     #Update if not using 'parson' Sonar instance
-    sonarqube.org/project-key: parson/{{ cookiecutter.account_name }}-{{ cookiecutter.project_slug }}
+    sonarqube.org/project-key: {{ cookiecutter.account_name }}-{{ cookiecutter.project_slug }}
     
     #Kubernetes dashboard
     backstage.io/kubernetes-label-selector: 'app={{ cookiecutter.service_identifier }}'
     
     #Harness CI/CD dashboard
     harness.io/pipelines: |
-      Build and Deploy: https://app.harness.io/ng/account/EeRjnXTnS4GrLG5VNNJZUw/all/orgs/sandbox/projects/parson/pipelines/Java_App_Provisioner/pipeline-studio/?storeType=INLINE
+      Build and Deploy: https://app.harness.io/ng/account/4vf8wTpeRBGTpj_YQBK4Xg/all/orgs/default/projects/default_project/pipelines/Java_App_Provisioner/pipeline-studio/?storeType=INLINE                        
     
     #Harness STO dashboard
     #harness.io/sto-test-target:
